@@ -56,7 +56,7 @@ npm run build
 
 🌍 Live Demo
 
-👉 View Vercel link -->  https://vercel.com/sravya-sirapus-projects/weather-now
+👉 View Vercel link -->  https://weather-now-eight-lemon.vercel.app/
 
 
 
