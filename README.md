@@ -36,7 +36,7 @@ ________________________________________________________________________________
 ## 🚀 Getting Started
 1. Clone Repository
 ```bash
-git clone https://github.com/your-username/weather-now.git
+git clone --> https://github.com/sravyasirapu/Weather__Now.git
 cd weather-now
 ```
 2. Install Dependencies 
