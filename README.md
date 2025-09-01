@@ -34,21 +34,19 @@ ________________________________________________________________________________
 _____________________________________________________________________________________________________________________________________________________________________________________________________________________
 
 ## 🚀 Getting Started
-
 1. Clone Repository
-git clone
-https://github.com/sravyasirapu/Weather__Now.git
-
+```bash
+git clone https://github.com/your-username/weather-now.git
 cd weather-now
+```
+2. Install Dependencies 
+```npm install```
 
-3. Install Dependencies
-npm install
+3. Run Development Server 
+```npm run dev```
 
-4. Run Development Server
-npm run dev
-
-5. Build for Production
-npm run build
+4. Build for Production 
+```npm run build```
 
 _____________________________________________________________________________________________________________________________________________________________________________________________________________________
 
