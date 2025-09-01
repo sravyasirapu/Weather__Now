@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Respect reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-spin-slow, .animate-cloud, .animate-rain, .animate-snow,
+  .animate-twinkle, .animate-fog, .animate-fog-slow, .animate-lightning, .animate-bolt {
+    animation: none !important;
+  }
+}
+
+/* Sun rays */
+@keyframes spin-slow { from {transform: rotate(0)} to {transform: rotate(360deg)} }
+.animate-spin-slow { animation: spin-slow 18s linear infinite }
+
+/* Clouds drift */
+@keyframes cloud { 0%,100% {transform: translateX(0)} 50% {transform: translateX(30px)} }
+.animate-cloud { animation: cloud 12s ease-in-out infinite }
+
+/* Rain fall */
+@keyframes rain {
+  0% { transform: translateY(-10%); opacity: 0 }
+  10% { opacity: .9 }
+  100% { transform: translateY(105vh); opacity: 0 }
+}
+.animate-rain { animation: rain 1.6s linear infinite }
+
+/* Snow fall + spin */
+@keyframes snow {
+  0% { transform: translateY(-10%) rotate(0deg); opacity: 0 }
+  10% { opacity: 1 }
+  100% { transform: translateY(100vh) rotate(360deg); opacity: 0 }
+}
+.animate-snow { animation: snow 6s linear infinite }
+
+/* Stars twinkle */
+@keyframes twinkle { 0%,100% {opacity:.2} 50% {opacity:1} }
+.animate-twinkle { animation: twinkle 2s ease-in-out infinite }
+
+/* Fog layers (slow side-to-side) */
+@keyframes fog { 0%,100% {transform: translateX(-5%)} 50% {transform: translateX(5%)} }
+.animate-fog { animation: fog 14s ease-in-out infinite }
+.animate-fog-slow { animation: fog 22s ease-in-out infinite }
+
+/* Lightning flashes (subtle, quick) */
+@keyframes lightning {
+  0%, 96%, 100% { background-color: rgba(255,255,255,0) }
+  97% { background-color: rgba(255,255,255,0.15) }
+  98% { background-color: rgba(255,255,255,0.35) }
+  99% { background-color: rgba(255,255,255,0.1) }
+}
+.animate-lightning { animation: lightning 4.5s infinite }
+
+/* Lightning bolt jitter */
+@keyframes bolt {
+  0%,100% { opacity: 0; transform: translate(-50%, 0) skewX(-20deg) }
+  10% { opacity: 1; transform: translate(-50%, 10px) skewX(-20deg) }
+  20% { opacity: .4; transform: translate(-50%, 25px) skewX(-25deg) }
+  30% { opacity: 0; }
+}
+.animate-bolt { animation: bolt 4.5s infinite }
