@@ -106,6 +106,13 @@ Tailwind CSS
 
 Icons/emoji for weather inspired by standard weather codes.
 ____________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+```🤖 LLM Usage Report – Weather Now App```
+
+📌 Purpose
+
+As part of the Aganitha Take-Home Exercise, I was required to use a Large Language Model (LLM) to assist in problem-solving. This report documents how I leveraged ChatGPT to build my solution efficiently.
+
 ```
 🤖 How I Used ChatGPT
 
